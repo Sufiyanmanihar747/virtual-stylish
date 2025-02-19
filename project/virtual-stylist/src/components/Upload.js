@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import api from '../api'; // Axios instance
+import api from '../api';
 
 const Upload = () => {
     const [file, setFile] = useState(null);
 
-    // Handle file selection
     const handleFileChange = (event) => {
         setFile(event.target.files[0]);
     };
 
-    // Handle file upload
     const handleFileUpload = async () => {
         const formData = new FormData();
         formData.append('file', file);
