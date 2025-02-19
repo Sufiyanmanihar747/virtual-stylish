@@ -1,1 +1,7 @@
 /venv
+
+/backend/app/dataset
+
+/backend/uploads/
+
+/backend/app/uploads/
